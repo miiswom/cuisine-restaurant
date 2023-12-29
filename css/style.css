@@ -1,0 +1,318 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body, 
+html {
+     font-family: "Young Serif", serif;
+     color: black;
+}
+li,
+a {
+     list-style: none;
+     text-decoration: none;
+     color: inherit;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header,
+ul {
+     float: left;
+     width: 100%;
+}
+
+header ul {
+     padding-right: 50px;
+}
+
+header ul li {
+     float: right;
+     padding: 10px 20px;
+}
+
+header ul img,
+.call {
+     display: block;
+     width: 25px;
+}
+
+/* header ul img:nth-of-type(1) {
+     width: 10px;
+} */
+
+.top-background,
+.top-main,
+.top-main h1,
+.top-main form,
+.socials,
+.socials div,
+.aboutus-section,
+.order-section,
+.order-section span,
+.order-section h2,
+.menu-nav,
+.showcase-img,
+.contact-section,
+.contact-section span,
+.contacts,
+.contacts img,
+.openings,
+.pasta-img-section,
+.testimonials-section,
+.testimonials-section p,
+.testimonials-section-img {
+     float: left;
+     width: 100%;
+}
+
+.top-background {
+     background: url(assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg) 100%/cover no-repeat;
+     height: 800px;
+}
+
+.top-main h1 {
+     padding: 10px 60% 10px 30px;
+     font-size: 5em;
+}
+
+/* .contacts,
+.contacts > * {
+     border: 1px solid red;
+} */
+
+.top-main form {
+     padding: 10px 40% 10px 30px;
+     position: relative;
+}
+.top-main form input {
+     width: 50%;
+     height: 50px;
+     border-radius: 10px 0 0 10px;
+
+}
+
+.top-main form a,
+.aboutus-section a {
+     display: inline-block;
+     background: orange;
+     color: white;
+     width: 150px;
+     height: 50px;
+     text-align: center;
+     padding: 15px 30px;
+     position: absolute;
+     top: 10px;
+     border-radius: 0 10px 10px 0;
+}
+
+.socials {
+     padding: 20px 70% 0 30px;
+}
+
+.socials div {
+     width: 33.333%;
+}
+
+.aboutus-section {
+     background: url(assets/pexels-cats-coming-7568491.jpg) 100%/cover no-repeat;
+     height: 870px;
+     transform: scaleX(-1);
+}
+
+.aboutus-section > * {
+     transform: scaleX(-1);
+     float: right;
+     width: 100%;
+}
+
+.aboutus-section {
+     padding: 10px 60% 10px 30px;
+}
+
+.aboutus-section span,
+.order-section span,
+.contact-section span,
+.testimonials-section span {
+     color: orange;
+     padding: 50px 0 0 0;
+     font-size: 1.3em;
+     margin-top: 100px;
+}
+
+.aboutus-section h2,
+.order-section h2 {
+     padding: 10px 50px 20px 0;
+     font-size: 3.3em;
+}
+
+.aboutus-section p {
+     font-size: 14px;
+     line-height: 2.5em;
+}
+
+.aboutus-section a {
+     border-radius: 10px 0 0 10px;
+}
+
+.order-section {
+     background: #f2f6f7;
+     height: 1000px;
+}
+
+.order-section span,
+.order-section h2,
+.contact-section span,
+.contact-section h2 {
+     text-align: center;
+} 
+
+.menu-nav li {
+     float: left;
+     padding: 10px 30px 10px 30px;
+     border-bottom: 2px solid rgb(205, 205, 205);
+}
+
+.menu-nav li:first-child {
+     color: orange;
+     border-bottom: 2px solid orange;
+
+}
+
+.menu-nav {
+     padding: 10px 31% 10px 31%;
+}
+
+.showcase-img {
+     display: block;
+     margin: auto;
+     padding: 10px 23% 10px 23%;
+}
+
+.showcase-img img {
+     margin: 8px 8px
+}
+
+.contacts {
+     position: relative;
+}
+
+.contacts img {
+     position: absolute;
+     left: 49%;
+     width: 50px;
+}
+
+.contacts span,
+.week-openings,
+.weekend-openings {
+     height: 50px;
+     padding: 0;
+     margin: 0;
+     padding: 10px 0;
+}
+
+.contacts .call {
+     padding-top: 20px;
+     margin-top: 55px;
+     color: inherit;
+     font-size: 1em;
+}
+
+.openings {
+     padding: 20px 25%;
+}
+
+.week-openings,
+.weekend-openings {
+     float: left;
+     width: 50%;
+     height: fit-content;
+     color: black;
+}
+
+.week-openings span,
+.weekend-openings span {
+     float: left;
+     color: black;
+     padding: 0;
+     margin: 0;
+     height: 40px;
+}
+
+span.weekdays {
+     font-size: 1em;
+}
+
+.pasta-img-section {
+     background: url(assets/brooke-lark-kXQ3J7_2fpc-unsplash.jpg) 100%/cover no-repeat;
+     height: 800px;
+     opacity: 0.7;
+}
+
+.pasta-img-section img {
+     display: block;
+     padding: 10% 0 0 0;
+     opacity: 2;
+     width: 700px;
+     margin: 0 auto;
+     border: 1px solid black
+}
+
+.testimonials-section {
+     position: relative;
+}
+
+.testimonials-section p {
+     text-align: center;
+     padding: 0 30% 0 30%;
+     display: block;
+     font-size: 14px;
+     line-height: 2em;
+}
+
+.testimonials-section p:last-child {
+     margin: 20px 0 150px 0;
+}
+
+.testimonials-section-img-1 {
+     position: absolute;
+     left: 47.5%;
+     top: 43%;
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     border: 1px solid lime;
+}
+
+.testimonials-section-img-2 {
+     position: absolute;
+     left: 47.5%;
+     top: 55%;
+     width: 80px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
