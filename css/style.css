@@ -1,269 +1,269 @@
 /* Box Model Hack */
 * {
-     box-sizing: border-box;
-   }
-   
-   /* Clear fix hack */
-   .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-   }
-   
-   .clear {
-   clear: both;
-   }
-   
-   body {
-     margin: 0;
-     font-family: 'Young Serif', serif;
-   }
-   
-   /******************************************
-   /* BASE STYLES
-   /*******************************************/
-   
-   .container {
-     width: 80%;
-     max-width: 1100px;
-     margin: 0 auto;
-   }
-   
-   .row {
-     display: flex;
-     /* border: 1px solid red; */
-   }
-   
-   a {
-     text-decoration: none;
-     color: black;
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+clear: both;
+}
+
+body {
+  margin: 0;
+  font-family: 'Young Serif', serif;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+
+li {
+  list-style: none;
+  color: black;
+}
+
+/* img {
+  width: 100%;
+} */
+
+.nav {
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.3em;
+
+}
+
+.nav__list li {
+  margin-right: 1em;
+  /* border: 1px solid red; */
+}
+
+.main,
+.aboutus,
+.order__section, 
+.contact__section,
+.testimonials__section {
+  padding: 50px 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.hero {
+  background:  url(assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg) 100%/cover no-repeat;
+  color: black;
+  padding: 30px 0 150px 0;
+  opacity: 0.7;
+}
+
+.hero__title {
+  font-size: clamp(6vw, 5em, 50px);
+  opacity: 1;
+}
+
+.hero__intro {
+  width: 50%;
+}
+
+.hero .form input {
+  width: 60%;
+  /* max-width: 100px; */
+  height: 50px;
+  border-radius: 10px 0 0 10px;
+}
+
+.hero .form a,
+.aboutus a {
+  /* display: inline-block; */
+  background: orange;
+  color: white;
+  width: 40%;
+  min-width: fit-content;
+  text-align: center;
+  padding: 13px 30px;
+  border-radius: 0 10px 10px 0;
+}
+
+.socials {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 300px;
+  justify-content: stretch;
+}
+
+.form > *{
+  align-self: center;  
+}
+
+main {
+  background: url(assets/pexels-cats-coming-7568491.jpg) 100%/cover no-repeat;
+  transform: scaleX(-1);
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+/* .form {
+  width: 100%;
+} */
+
+.aboutus {
+  width: 40%;
+  transform: scaleX(-1);
+}
+
+.aboutus__section span,
+.order__section--titles span,
+.contact__section--titles span,
+.contact__section--phone span + span,
+.testimonials__section--titles span {
+    display: inline-block;
+    width: 100%;  
+     color: orangered;
+     font-size: 2rem;
      font-weight: 900;
-   }
-   
-   li {
-     list-style: none;
-     color: black;
-   }
-   
-   /* img {
-     width: 100%;
-   } */
-   
-   .nav {
-     justify-content: space-between;
-   }
-   
-   .nav__list {
-     display: flex;
-   
-     margin: 0;
-     padding: 0;
-     list-style: none;
-     font-size: 1.3em;
-   
-   }
-   
-   .nav__list li {
-     margin-right: 1em;
-     /* border: 1px solid red; */
-   }
-   
-   .main,
-   .aboutus,
-   .order__section, 
-   .contact__section,
-   .testimonials__section {
-     padding: 50px 0;
-   }
-   
-   /******************************************
-   /* LAYOUT
-   /*******************************************/
-   .hero {
-     background:  url(assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg) 100%/cover no-repeat;
-     color: black;
-     padding: 30px 0 150px 0;
-     opacity: 0.7;
-   }
-   
-   .hero__title {
-     font-size: clamp(6vw, 5em, 50px);
-     opacity: 1;
-   }
-   
-   .hero__intro {
-     width: 50%;
-   }
-   
-   .hero .form input {
-     width: 60%;
-     /* max-width: 100px; */
-     height: 50px;
-     border-radius: 10px 0 0 10px;
-   }
-   
-   .hero .form a,
-   .aboutus a {
-     /* display: inline-block; */
-     background: orange;
-     color: white;
-     width: 40%;
-     min-width: fit-content;
-     text-align: center;
-     padding: 13px 30px;
-     border-radius: 0 10px 10px 0;
-   }
-   
-   .socials {
-     display: flex;
-   }
-   
-   .form {
-     display: flex;
-     align-items: center;
-     width: 100%;
-     min-width: 300px;
-     justify-content: stretch;
-   }
-   
-   .form > *{
-     align-self: center;  
-   }
-   
-   main {
-     background: url(assets/pexels-cats-coming-7568491.jpg) 100%/cover no-repeat;
-     transform: scaleX(-1);
-     color: black;
-     font-size: 1.3rem;
-     font-weight: 300;
-     opacity: 0.8;
-   }
-   
-   /* .form {
-     width: 100%;
-   } */
-   
-   .aboutus {
-     width: 40%;
-     transform: scaleX(-1);
-   }
-   
-   .aboutus__section span,
-   .order__section--titles span,
-   .contact__section--titles span,
-   .contact__section--phone span + span,
-   .testimonials__section--titles span {
-       display: inline-block;
-       width: 100%;  
-        color: orangered;
-        font-size: 2rem;
-        font-weight: 900;
-       text-align: center;
-   }
-   
-   .aboutus__links {
-     width: 50%;
-     
-     display: flex;
-   }
-   
-   a.aboutus__link--1 {
-     width: 80%;
-     border-radius: 10px 0 0 10px;
-     background: orange;
-   }
-   
-   a.aboutus__link--2 {
-     width: 20%;
-     background: rgb(247, 194, 95);
-     border-radius: 0 10px 10px 0 ;
-   }
-   
-   /* .order__section--nav,
-   .order__section--nav > * {
-     border: 1px solid red;
-   } */
-   
-   .order__section--titles h2,
-   .contact__section--titles h2,
-   .testimonials__section--titles h2{
-     text-align: center;
-   }
-   
-   .img__list {
-     margin: 0 auto;
-     /* border: 1px solid red; */
-     width: 80%;
-     flex-wrap: wrap;
-     justify-content: center;
-     gap: 10px;
-   }
-   .order__section--img img {
-     display: block;
-     width: 100%;
-     /* border: 1px solid red; */
-     /* max-width: 602px; */
-     /* margin: 0 auto; */
-   }
-   
-   .order__section .nav__list {
-     margin: 0 auto;
-     padding: 30px 0;
-   }
-   
-   .contact__section--phone,
-   .contact__section--openings .week,
-   .contact__section--openings .weekend{
-     width: 30%;
-     text-align: center;
-     margin: 0 auto;
-   
-     display: flex;
-     flex-direction: column;
-   }
-   
-   .contact__section--openings .days {
-     text-decoration: underline;
-   }
-   
-   .contact__section--openings .timings,
-   .customer__intro div + p {
-     font-size: 1.4rem;
-   }
-   
-   .customer--img {
-     width: clamp(250px, 40%, 280px);
-     margin: 0 auto;
-     height: 250px;
-   }
-   
-   .customer--img img {
-     width: 100%;
-     height: 100%;
-     border-radius: 50%;
-     border: 1px solid gold;
-   }
-   
-   .customer__intro {
-     width: 80%;
-     text-align: center;
-     margin: 0 auto;
-   }
-   /******************************************
-   /* ADDITIONAL STYLES
-   /*******************************************/
-   
-   @media (max-width: 900px) {
-     .row {
-       display: block;
-       /* border: 1px solid red; */
-     }
-     .aboutus {
-       width: 100%;
-       align-self: flex-start;
-       /* color: lime */
-     }
-   }
+    text-align: center;
+}
+
+.aboutus__links {
+  width: 50%;
+  
+  display: flex;
+}
+
+a.aboutus__link--1 {
+  width: 80%;
+  border-radius: 10px 0 0 10px;
+  background: orange;
+}
+
+a.aboutus__link--2 {
+  width: 20%;
+  background: rgb(247, 194, 95);
+  border-radius: 0 10px 10px 0 ;
+}
+
+/* .order__section--nav,
+.order__section--nav > * {
+  border: 1px solid red;
+} */
+
+.order__section--titles h2,
+.contact__section--titles h2,
+.testimonials__section--titles h2{
+  text-align: center;
+}
+
+.img__list {
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.order__section--img img {
+  display: block;
+  width: 100%;
+  /* border: 1px solid red; */
+  /* max-width: 602px; */
+  /* margin: 0 auto; */
+}
+
+.order__section .nav__list {
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.contact__section--phone,
+.contact__section--openings .week,
+.contact__section--openings .weekend{
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__section--openings .days {
+  text-decoration: underline;
+}
+
+.contact__section--openings .timings,
+.customer__intro div + p {
+  font-size: 1.4rem;
+}
+
+.customer--img {
+  width: clamp(250px, 40%, 280px);
+  margin: 0 auto;
+  height: 250px;
+}
+
+.customer--img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid gold;
+}
+
+.customer__intro {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media (max-width: 900px) {
+  .row {
+    display: block;
+    /* border: 1px solid red; */
+  }
+  .aboutus {
+    width: 100%;
+    align-self: flex-start;
+    /* color: lime */
+  }
+}
