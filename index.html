@@ -6,22 +6,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
     	<meta charset="utf-8">
 		<!-- What shows up when you google something-->
-    	<meta name="description" content="Your description goes here">
-		<!-- Not as important due to keyword stuffing-->
-    	<meta name="keywords" content="one, two, three">
+    <meta name="description" content="Your description goes here">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />		<!-- Not as important due to keyword stuffing-->
+    <meta class="aboutus-section" name="keywords" content="one, two, three">
 		<title>Cuisine Restaurant</title>
     <!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-    <div class="top-background">
-      <header>
-        <img src="" alt="logo">
-        <nav>
-          <ul> 
-            <li><img src="css/assets/noun-basket-194730.svg" alt="cart-icon"></li>
-            <li><img src="css/assets/noun-1868276.svg" alt="search-icon"></li>
+    <div class="hero">
+      
+      <!--<header class="container">
+        <nav class="nav row">
+          <ul class="nav__list">
+            <li><img src="" alt="logo"></li>
+          </ul>
+          <ul class="nav__list"> 
+            <li><img class="top-logo cart-icon" src="" alt=""></li>
+            <li><img class="top-logo search-icon" src="" alt=""></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Menu</a></li>
@@ -30,15 +32,17 @@
             <li><a href="#">Location</a></li>
           </ul>
         </nav>
-      </header>
-      
-      <section class="top-main">
-        <h1>Welcome<br /> to Our Cuisine <br /> Restaurant</h1>
-        <form>
-          <input type="text">
-          <a href="#">Location></a>
-        </form class="clear">
-        <section class="socials">
+      </header>-->
+
+      <div class="container">
+        <div class="hero__intro">
+          <h1 class="hero__title">Welcome to Our Cuisine Restaurant</h1>
+          <div class="form">
+            <input type="text">
+            <a href="#">Location></a>
+          </div>
+        </div>
+        <div class="col socials">
           <div>
             <img src="" alt="fb-logo">
             <span>252k</span>
@@ -51,77 +55,102 @@
             <img src="" alt="insta-logo">
             <span>55k</span>
           </div>
-        </section>
-      </section>
+        </div>
+      </div>
+    
     </div>
 
-    <section class="aboutus-section">
-      <span>About Us</span>
-      <h2>Discover Our Restaurant Story</h2>
-      <p>Cusine is a team work of Cuisine Restaurant Cafe, we aim at promotinf the foodstuff in dustry through branches, we establish and through the new dishes, and integrate between different culures. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dignissimos officiis incidunt, dolorum suscipit id quia! Amet officiis, illo, nostrum exercitationem ipsa architecto at, veniam doloremque quasi quisquam consectetur itaque!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officia nihil nulla quaerat minus, doloribus impedit unde reprehenderit aliquam. Debitis, consequatur! Natus in quibusdam, iure ad porro delectus itaque deleniti!</p>
-      <div>
-        <a href="#">Discover Menu</a>
-        <a href="#">[.]</a>
-      </div>
-    </section>
-
-    <section class="order-section">
-      <span>Order Online Now</span>
-      <h2>Our Speciality Cusine</h2>
-      <nav>
-        <ul class="menu-nav">
-          <li><a href="#"> Breakfast</a></li>
-          <li><a href="#"> Lunch</a></li>
-          <li><a href="#"> Dinner</a></li>
-          <li><a href="#"> Dessert</a></li>
-          <li><a href="#"> Drinks</a></li>
-        </ul>
-      </nav>
-      <section class="showcase-img">
-        <img src="css/assets/200.svg" alt="">
-        <img src="css/assets/200.svg" alt="">
-        <img src="css/assets/200.svg" alt="">
-        <img src="css/assets/200.svg" alt="">
-        <img src="css/assets/200.svg" alt="">
-        <img src="css/assets/200.svg" alt="">
-        <img src="css/assets/200.svg" alt="">
-        <img src="css/assets/200.svg" alt="">
-      </section>
-
-      <section class="contact-section">
-        <span>Book Table</span>
-        <h2>Opening Hours</h2>
-        <div class="contacts">
-          <img src="css/assets/noun-call-1226951.svg" alt="call-icon">
-          <span class="call">Call Now</span>
-          <span>+12345 678 910</span>
-        </div>
-        <section class="openings">
-          <section class="week-openings">
-            <span class="weekdays">Monday to Thursday</span>
-            <span>09:00 am - 22:00 pm</span>
-          </section>
-          <section class="weekend-openings">
-            <span class="weekdays">Friday to Sunday</span>
-            <span>11:00 am - 20:00 pm</span>
-          </section>
+  <main> 
+    <div class=" container row">
+      <div class="aboutus">
+        <section class="aboutus__section">
+          <span>About Us</span>
+          <h2>Discover Our Restaurant Story</h2>
+          <p>Cusine is a team work of Cuisine Restaurant Cafe, we aim at promotinf the foodstuff in dustry through branches, we establish and through the new dishes, and integrate between different culures. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dignissimos officiis incidunt, dolorum suscipit id quia! Amet officiis, illo, nostrum exercitationem ipsa architecto at, veniam doloremque quasi quisquam consectetur itaque!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officia nihil nulla quaerat minus, doloribus impedit unde reprehenderit aliquam. Debitis, consequatur! Natus in quibusdam, iure ad porro delectus itaque deleniti!</p>
         </section>
-      </section>
+        <div class="aboutus__links">
+          <a class="aboutus__link--1" href="#">Discover Menu</a>
+          <a class="aboutus__link--2" href="#">[.]</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
 
-      <section class="pasta-img-section">
-        <!-- <img src="css/assets/omer-haktan-bulut-MRmFd9YSOUU-unsplash.jpg" alt="pasta-img"> -->
-      </section>
+  <div>
+    <div class="container">
+      <section class="order__section">
+        <div class="order__section--titles">
+          <span>Order Online Now</span>
+          <h2>Our Speciality Cusine</h2>
+        </div>
+        <!--<nav class="nav row">
+          <ul class="nav__list">
+            <li><a href="#"> Breakfast</a></li>
+            <li><a href="#"> Lunch</a></li>
+            <li><a href="#"> Dinner</a></li>
+            <li><a href="#"> Dessert</a></li>
+            <li><a href="#"> Drinks</a></li>
+          </ul>
+        </nav>-->
+        <section class="img__list row">
+          <div class="order__section--img"><img src="css/assets/200.svg" alt=""></div>
+          <div class="order__section--img"><img src="css/assets/200.svg" alt=""></div>
+          <div class="order__section--img"><img src="css/assets/200.svg" alt=""></div>
+          <div class="order__section--img"><img src="css/assets/200.svg" alt=""></div>
+          <div class="order__section--img"><img src="css/assets/200.svg" alt=""></div>
+          <div class="order__section--img"><img src="css/assets/200.svg" alt=""></div>
+          <div class="order__section--img"><img src="css/assets/200.svg" alt=""></div>
+          <div class="order__section--img"><img src="css/assets/200.svg" alt=""></div>
+        </section>
+    </div>
+  </div>
 
-      <section class="testimonials-section">
-        <span>Testimonials</span>
-        <h2>Customer Say</h2>
-        <img class="testimonials-section-img-1" src="css/assets/pink-flower.jpg" alt="customer">
-        <p>Mr John Smith</p>
-        <img class="testimonials-section-img-2" src="css/assets/noun-five-stars-1717601.svg" alt="five-stars">
-        <p>Delicious boneless, skinless chicken breasts and fresh mushrooms in garlic and white vinegar sauce. Cusine is a team work at Cuisine Restaurant Cafe, we aim at promoting the foodstuff industry through the branches and through the new dishes</p>
-      </section>
-    </section>
+      <div class="contact__section">
+        <div class="container">
+          <section class="contact__section--titles">
+            <span>Book Table</span>
+            <h2>Opening Hours</h2>
+          </section>
+          <div class="contact__section--phone">
+            <img src="">
+            <span class="call">Call Now</span>
+            <span>+12345 678 910</span>
+          </div>
+          <div class="contact__section--openings row">
+            <section class="week">
+              <span class="days">Monday to Thursday</span>
+              <span class="timings">09:00 am - 22:00 pm</span>
+            </section>
+            <section class="weekend">
+              <span class="days">Friday to Sunday</span>
+              <span class="timings">11:00 am - 20:00 pm</span>
+            </section>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <section class="pasta-img-section">
+         <div class="order__section--img row"><img src="css/assets/omer-haktan-bulut-MRmFd9YSOUU-unsplash.jpg" alt="pasta-img"></div>
+        </section>
+      </div>
+
+      <div class="testimonials__section">
+        <div class="container">
+          <section class="testimonials__section--titles">
+            <span>Testimonials</span>
+            <h2>Customer Say</h2>
+          </section>
+          <div class="customer__intro">
+            <div class="customer--img row"><img class="testimonials__section--img-1" src="css/assets/pink-flower.jpg" alt="customer"></div>
+            <p>Mr John Smith</p>
+            <img class="testimonials__section-img-2" src="" alt="five-stars">
+            <p>Delicious boneless, skinless chicken breasts and fresh mushrooms in garlic and white vinegar sauce. Cusine is a team work at Cuisine Restaurant Cafe, we aim at promoting the foodstuff industry through the branches and through the new dishes</p>
+          </div>
+        </div>
+      </div>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

@@ -1,0 +1,86 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+clear: both;
+}
+  
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body, 
+html {
+  font-family: "Young Serif", serif;
+  color: black;
+}
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.top-background {
+  background: url(assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg) 100%/cover no-repeat;
+  width: 100%;
+}
+
+.top-background header {
+  width: 100%;
+}
+
+.top-background nav > ul > li {
+  display: inline-block;
+  width: 10%;
+  font-size: 1rem;
+  max-width: 130px;
+
+}
+.top-logo {
+  width: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .top-background nav > ul > li {
+    display: none;
+  }
+}
+
+li > img {
+  width: 20px;
+}
+
+
+.aboutus-section {
+  background: url(assets/pexels-cats-coming-7568491.jpg) 100%/cover no-repeat;
+  transform: scaleX(-1);
+  width: 100%;
+}
+
+
+.pasta-img-section {
+  background: url(assets/brooke-lark-kXQ3J7_2fpc-unsplash.jpg) 100%/cover no-repeat;  opacity: 0.7;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
