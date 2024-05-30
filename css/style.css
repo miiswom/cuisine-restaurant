@@ -19,6 +19,7 @@ clear: both;
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Young Serif', serif;
 }
 
@@ -52,18 +53,10 @@ li {
   width: 100%;
 } */
 
-.nav {
-  justify-content: space-between;
-}
-
-.nav__list {
-  display: flex;
-
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 1.3em;
-
+.header__section {
+  background: brown;
+  padding: 20px 0;
+  margin-top: 0;
 }
 
 .nav__list li {
@@ -79,13 +72,56 @@ li {
   padding: 50px 0;
 }
 
+.socials__section {
+  padding: 15px 0;
+  width: 50%;
+}
+
+.img__list {
+  padding: 15px 0;
+}
+
+.icons {
+  width: 20px;
+}
+
+.icons img {
+  width: 100%;
+}
+
+.arrow-right {
+  width: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.logo__nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40%
+}
+
+#logo {
+  width: 50px;
+ margin: 0 auto;
+}
+.shopping div{
+  width: 30px;
+}
+
+.shopping {
+  gap: 30px
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
 .hero {
   background:  url(assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg) 100%/cover no-repeat;
   color: black;
-  padding: 30px 0 150px 0;
+  padding: 0 0 80px 0;
   opacity: 0.7;
 }
 
@@ -117,8 +153,15 @@ li {
   border-radius: 0 10px 10px 0;
 }
 
-.socials {
+.socials__section{
   display: flex;
+  width: 50%;
+  gap: 15px;
+}
+
+.social__items {
+  display: flex;
+  align-self: center;
 }
 
 .form {
@@ -139,7 +182,7 @@ main {
   color: black;
   font-size: 1.3rem;
   font-weight: 300;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /* .form {
@@ -182,11 +225,6 @@ a.aboutus__link--2 {
   border-radius: 0 10px 10px 0 ;
 }
 
-/* .order__section--nav,
-.order__section--nav > * {
-  border: 1px solid red;
-} */
-
 .order__section--titles h2,
 .contact__section--titles h2,
 .testimonials__section--titles h2{
@@ -195,12 +233,17 @@ a.aboutus__link--2 {
 
 .img__list {
   margin: 0 auto;
-  /* border: 1px solid red; */
   width: 80%;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
+
+.img__list,
+.img__list > * {
+    border: 1px solid red;
+}
+
 .order__section--img img {
   display: block;
   width: 100%;
@@ -252,11 +295,56 @@ a.aboutus__link--2 {
   text-align: center;
   margin: 0 auto;
 }
+
+.pasta__section {
+  background:  url(assets/brooke-lark-kXQ3J7_2fpc-unsplash.jpg) 100%/cover no-repeat;
+  color: black;
+  padding: 300px 0;
+  opacity: 0.7; 
+}
+
+.review__section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#main__nav a {
+  border-bottom: 1px solid black;
+}
+
+#shopping__nav img:hover,
+#main__nav a:hover {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+#menu__nav img {
+  background: black;
+  border-radius: 50%;
+  width: 30px;
+  margin: 0 auto;
+  padding: 5px;
+  vertical-align: center;
+}
+
+.nav--visible {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.nav--toggle {
+  display: none;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
 @media (max-width: 900px) {
+  .contact__section span,
   .row {
     display: block;
     /* border: 1px solid red; */
@@ -265,5 +353,9 @@ a.aboutus__link--2 {
     width: 100%;
     align-self: flex-start;
     /* color: lime */
+  }
+
+  .img__list img{
+    margin-bottom: 10px;
   }
 }

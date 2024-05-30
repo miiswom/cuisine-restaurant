@@ -7,7 +7,8 @@
     	<meta charset="utf-8">
 		<!-- What shows up when you google something-->
     <meta name="description" content="Your description goes here">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />		<!-- Not as important due to keyword stuffing-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />		
+    <!-- Not as important due to keyword stuffing-->
     <meta class="aboutus-section" name="keywords" content="one, two, three">
 		<title>Cuisine Restaurant</title>
     <!-- external CSS link -->
@@ -16,23 +17,28 @@
 	<body>
     <div class="hero">
       
-      <!--<header class="container">
-        <nav class="nav row">
-          <ul class="nav__list">
-            <li><img src="" alt="logo"></li>
-          </ul>
-          <ul class="nav__list"> 
-            <li><img class="top-logo cart-icon" src="" alt=""></li>
-            <li><img class="top-logo search-icon" src="" alt=""></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Order Now</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Location</a></li>
-          </ul>
-        </nav>
-      </header>-->
+      <div class="header__section">
+        <header class="container">
+          <nav id="nav" class="row">
+            <ul class="nav__list logo__nav">
+              <li><div id="menu__nav"class="icons"><img src="css/assets/menu.svg" alt=""></div></li>
+              <li><div id="logo" class="icons"><img src="css/assets/logo.svg" alt="logo"></div></li>
+            </ul>
+            <ul id="main__nav" class="nav__list testing__nav nav--toggle nav--visible">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Order Now</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Location</a></li>
+            </ul>
+            <ul id="shopping__nav"class="nav__list nav--toggle">
+              <li><div class="icons"><img class="cart-icon" src="css/assets/shopping-cart.svg" alt=""></div></li>
+              <li><div class="icons"><img class="search-icon" src="css/assets/search.svg" alt=""></div></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
 
       <div class="container">
         <div class="hero__intro">
@@ -42,17 +48,17 @@
             <a href="#">Location></a>
           </div>
         </div>
-        <div class="col socials">
-          <div>
-            <img src="" alt="fb-logo">
+        <div class="socials__section">
+          <div class="social__items">
+            <div class="icons"><img src="css/assets/facebook.svg" alt="fb-logo"></div>
             <span>252k</span>
           </div>
-          <div>
-            <img src="" alt="twitter-logo">
+          <div class="social__items">
+            <div class="icons"><img src="css/assets/twitter.svg" alt="twitter-logo"></div>
             <span>62k</span>
           </div>
-          <div>
-            <img src="" alt="insta-logo">
+          <div class="social__items">
+            <div class="icons"><img src="css/assets/instagram.svg" alt="insta-logo"></div>
             <span>55k</span>
           </div>
         </div>
@@ -71,13 +77,12 @@
         </section>
         <div class="aboutus__links">
           <a class="aboutus__link--1" href="#">Discover Menu</a>
-          <a class="aboutus__link--2" href="#">[.]</a>
+          <a class="aboutus__link--2" href="#"><div class="icons arrow-right"><img src="css/assets/arrow-right.svg" alt=""></div></a>
         </div>
       </div>
     </div>
   </main>
   
-
   <div>
     <div class="container">
       <section class="order__section">
@@ -131,10 +136,10 @@
         </div>
       </div>
       
-      <div class="container">
-        <section class="pasta-img-section">
-         <div class="order__section--img row"><img src="css/assets/omer-haktan-bulut-MRmFd9YSOUU-unsplash.jpg" alt="pasta-img"></div>
-        </section>
+      <div class="pasta__section">
+        <div class="container">
+          <section class="pasta__section--img"></section>
+        </div>
       </div>
 
       <div class="testimonials__section">
@@ -146,7 +151,13 @@
           <div class="customer__intro">
             <div class="customer--img row"><img class="testimonials__section--img-1" src="css/assets/pink-flower.jpg" alt="customer"></div>
             <p>Mr John Smith</p>
-            <img class="testimonials__section-img-2" src="" alt="five-stars">
+            <div class="review__section">
+              <div class="icons review--stars"><img class="star" src="css/assets/star.svg" alt="star review"></div>
+              <div class="icons review--stars"><img class="star" src="css/assets/star.svg" alt="star review"></div>
+              <div class="icons review--stars"><img class="star" src="css/assets/star.svg" alt="star review"></div>
+              <div class="icons review--stars"><img class="star" src="css/assets/star.svg" alt="star review"></div>
+              <div class="icons review--stars"><img class="star" src="css/assets/star (1).svg" alt="star review"></div>
+            </div>
             <p>Delicious boneless, skinless chicken breasts and fresh mushrooms in garlic and white vinegar sauce. Cusine is a team work at Cuisine Restaurant Cafe, we aim at promoting the foodstuff industry through the branches and through the new dishes</p>
           </div>
         </div>
