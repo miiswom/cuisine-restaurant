@@ -9,3 +9,4 @@ menuBtn.addEventListener('click', () => {
     mainNav.classList.toggle('nav--toggle');
     // alert('pressed');
 });
+
