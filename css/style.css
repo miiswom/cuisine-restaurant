@@ -48,6 +48,8 @@ li {
   list-style: none;
   color: black;
   text-wrap: nowrap;
+  margin: 0;
+  padding: 0;
 }
 
 /* img {
@@ -327,8 +329,14 @@ a.aboutus__link--2 {
 }
 
 /*
-testing :
+------------- testing :
 */
+
+/* .carousel__button {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+} */
 
 /*
 default :
