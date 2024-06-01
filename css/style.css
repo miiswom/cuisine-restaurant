@@ -52,6 +52,9 @@ li {
   padding: 0;
 }
 
+span {
+  text-wrap: nowrap;
+}
 /* img {
   width: 100%;
 } */
@@ -255,13 +258,14 @@ a.aboutus__link--2 {
 .contact__section--phone,
 .contact__section--openings .week,
 .contact__section--openings .weekend{
-  width: 30%;
+  width: 100%;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
 
   display: flex;
   flex-direction: column;
 }
+
 
 .contact__section--openings .days {
   text-decoration: underline;
@@ -478,6 +482,9 @@ header #logo,
   background: rgba(0,0,0,.75);
 }
 
+.is-hidden {
+  display: none;
+}
 
 /* 
 from 600px
