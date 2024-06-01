@@ -511,7 +511,7 @@ from 950px :
   #main__nav,
   #shopping__nav {
     display: flex;
-    font-size: 1rem;
+    font-size: clamp(1.5vw, 1.3em, 10px);
   }
 /* 
   #main__nav,
